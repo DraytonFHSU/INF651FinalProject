@@ -1,0 +1,156 @@
+/* Reset some default browser styles */
+ body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Clearfix for containing floated elements */
+}
+
+p{
+    background-color: lightgrey;
+    padding: 5px;
+}
+#intro{
+    margin-left: 8px;
+}
+img{
+    border: 5px solid gold;
+}
+
+/* The columns used so that the buttons line up rather than stack on top of each other */
+.columnWrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    margin:10px;
+    box-sizing: border-box;
+    flex: 1;
+    float: left;
+}
+
+/* Popup is used as animation handeler */
+#popUp{
+    width: 100%;
+    height: 0px;
+    border: solid black 5px;
+    background-size: 100% 100%;
+}
+
+#buttonMenu{
+    background-color: #fff;
+}
+
+/* Selectors for all of the various buttons */
+
+#clickerButton{
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+    background-color: #e7e7e7; color: black;
+    display: flex;
+}
+
+#lightSwitchButton{
+    width: 25px;
+    height: 40px;
+    border: 0px;
+    background-image: url('images/lightSwitchOn.png');
+    display: none;
+}
+
+#downStairsButton{
+    width: 153px;
+    height: 200px;
+    border: solid black 2px;
+    background-color: #e7e7e7; color: black;
+    background-image: url('images/basementDoor.png');
+    display: none;
+}
+
+#endButton{
+    width: 80px;
+    height: 80px;
+    border: 0px;
+    background-color: #e7e7e7; color: black;
+    background-image: url('images/winnerIsYou.png');
+    display: none;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* css for form */
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+#formLabel {
+    display: block;
+    margin-bottom: 8px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+#formButton {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#formButton:hover {
+    background-color: #333;
+}
